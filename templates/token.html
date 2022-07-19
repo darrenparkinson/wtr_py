@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}User Token{% endblock %}
+{% block content %}
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Success!</h2>
+            <p>
+                Here is your token.
+            </p>
+            <table class="table">
+                <tbody>
+                        <th scope="row">Current Token</th>
+                        <td><pre><code>{{ token }}</code></pre></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
